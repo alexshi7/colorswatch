@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Analysis Tool</title>
+    <style>
+        .color-box {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 5px;
+        }
+        #imagePreview {
+            display: block;
+            margin: 10px 0;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <input type="file" id="imageInput">
+    <button onclick="analyzeImageColors()">Analyze Colors</button>
+
+    <h2>Dominant Colors:</h2>
+
+    <!-- Image Preview -->
+    <img id="imagePreview" alt="Image Preview">
+
+    <!-- Color Palette -->
+    <div id="colorPalette"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
